@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Cheatsheet</title>
+    <link rel="stylesheet" href="./assets/reset.css">
+    <link rel="stylesheet" href="./assets/style.css"> 
+
+</head>
+<body>
+    <header>
+        <h1>Git Snippet Cheatsheet </h1>
+        <p> Ever have trouble recalling the exact syntax for your
+            favorite Git commands?
+            Give it a permanent home and add it to this page!
+            Select any snippet below and it'll automatically select 
+            all of the code for you to copy.</p>
+    </header>
+    <main>
+<!-- Check git Version -->
+        <article>
+            <div class="card">
+                <h2>Check git Version</h2>
+                <p>Check the current version of your local copy of 
+                    Git by typing the following command:</p>
+                <div class="codeBackground">
+                    <pre><code>git --version</code></pre>
+                </div>
+            </div>
+        </article>
+
+<!-- Download Repository -->
+        <article>
+            <div class="card">
+                <h2>Download Repository</h2>
+                <p>Download a remote repository from a url for example gitHup.</p>
+                <div class="codeBackground">
+                    <pre><code>git clone &lt;url&gt;</url></code></pre>
+                </div>
+            </div>
+        </article>
+
+<!-- git Status -->
+        <article>
+            <div class="card">
+                <h2>git Status</h2>
+                <p>This command shows the current state of the 
+                    working directory and the staged changes.</p>
+                <div class="codeBackground">
+                    <pre><code>git status</code></pre>
+                </div>
+            </div>
+        </article>
+
+<!-- git Add -->
+        <article>
+            <div class="card">
+                <h2>git Add</h2>
+                <p>command adds a change in the working directory to be staged and ready to be committed. 
+                    If you add a period to the end of the command (for example, git add .), it will add any 
+                    untracked or modified files in the current directory (the current directory is 
+                    represented by .) and all subdirectories to be staged.</p>
+                <div class="codeBackground">
+                    <pre><code>git add .</code></pre>
+                </div>
+            </div>
+        </article>
+
+<!-- git Commit -->
+        <article>
+            <div class="card">
+                <h2>git Commit</h2>
+                <p>command captures a snapshot of the currently staged changes.</p>
+                <div class="codeBackground">
+                    <pre><code>git commit -m 'initial commit'</code></pre>
+                </div>
+            </div>
+        </article>
+
+<!-- git push -->
+        <article>
+            <div class="card">
+                <h2>git Push</h2>
+                <p>This command pushes up the local repository content to a remote 
+                    repository. After the files have been added and committed, they 
+                    must be pushed up to the remote repository on GitHub.</p>
+                <div class="codeBackground">
+                    <pre><code>git push origin main</code></pre>
+                </div>
+            </div>
+        </article>
+
+<!-- Template for additional cards -->
+        <!-- <article>
+            <div class="card">
+                <h2></h2>
+                <p></p>
+                <div class="codeBackground">
+                    <pre><code></code></pre>
+                </div>
+            </div>
+        </article> -->
+    </main>  
+    <footer>
+        <h3>Made with <span role="img" aria-label="heart">❤️</span> and Git</h3>
+        <p>For additional git help refer to the <a href="https://coding-boot-camp.github.io/full-stack/git/getting-started-with-git">coding-boot-camp</a> page.</p>
+    </footer>
+</body>
+</html>

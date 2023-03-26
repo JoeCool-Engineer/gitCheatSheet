@@ -1,0 +1,123 @@
+:root {
+    --mainBackgroundColor: #1a1c1e;
+    --mainTextColor: rgba(6, 56, 255, 0.6);
+    --mainTextColorGradient: rgba(17, 0, 255, 0.3);
+    --lightTextColor: #e0eae4;
+}
+
+* {
+    font-size: 15px;
+}
+
+body {
+    background-color: var(--mainBackgroundColor);
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--mainTextColor);    
+}
+
+header {
+    text-align: center;
+    color: var(--mainTextColor);
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 3;
+    font-weight: bold;
+}
+
+header p {
+    color: var(--lightTextColor);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 15px 0 15px;
+}
+
+h2 {
+    border: 2px solid var(--lightTextColor);
+    border-radius: 5px;
+    background-color: var(--mainBackgroundColor);
+    position: relative;
+    bottom: 40px;
+    padding: 5px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex: 1 1 calc(100%/3);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    border: 2px dashed var(--lightTextColor);
+    margin: 20px;
+    padding: 20px;
+}
+
+article p {
+    position: relative;
+    bottom: 20px;
+}
+
+.card h2 {
+    transition: all 0.5s ease-in-out;
+}
+
+.card:hover,
+.card:hover h2 {
+    box-shadow: inset 0 0 8px rgba(80, 0, 255, 1), 
+        0 0 15px rgba(80, 0, 255, 1); 
+}
+
+pre {
+    font-family: monospace;
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+div.codeBackground {
+    display: flex;
+    align-content: center;
+    flex-grow: 1;
+    border-radius: 8px;
+    padding: 10px;
+    color: var(--lightTextColor);
+    background-image: linear-gradient(
+        var(--mainTextColorGradient) 0%,
+        var(--mainTextColor) 100%
+    );
+}
+
+footer {
+    margin: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+    article {
+        flex: 1 1 50%;
+    }    
+}
+
+@media screen and (max-width: 768px) {
+    article {
+        flex: 1 1 100%;
+    }  
+}
+
+
+
+
+
